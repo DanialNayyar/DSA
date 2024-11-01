@@ -1,0 +1,13 @@
+class Solution(object):
+    def getConcatenation(self, nums):
+        ans = []
+        count = []
+        
+        for i in nums:
+            count.append(i)
+            ans.append(i)
+
+        for i in count:
+            ans.append(i)
+
+        return ans
