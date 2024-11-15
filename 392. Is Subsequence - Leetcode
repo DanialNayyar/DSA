@@ -1,0 +1,15 @@
+class Solution(object):
+    def isSubsequence(self, s, t):
+        pointer = 0
+
+        if len(s) == 0:
+            return True
+
+        for char in t:
+            if pointer <len(s) and char ==s[pointer]:
+                pointer +=1
+            
+            if pointer == len(s):
+                return True 
+        
+        return False
