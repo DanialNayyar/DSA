@@ -1,0 +1,12 @@
+class Solution(object):
+    def singleNumber(self, nums):
+
+        check_set = set()
+
+        for i in nums:
+            if i  in check_set: 
+                check_set.remove(i)
+            else:
+                check_set.add(i)
+
+        return list(check_set)
